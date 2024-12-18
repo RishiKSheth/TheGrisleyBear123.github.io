@@ -30,3 +30,7 @@
   animation-duration: 5s; 
   animation-iteration-count: infinite;
 }
+
+#descriptAboutSelf{ 
+  font-family: 'Courier New', Courier, monospace;
+}
