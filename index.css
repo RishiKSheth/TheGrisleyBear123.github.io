@@ -6,6 +6,14 @@
     100% {background-color:red; left:0px; top:0px;}
   }
 
+@keyframes word{ 
+    0% {content: "Programmer";}
+    25% {content: "Designer";}
+    50% {content: "Artist";}
+    75% {content: "Web Developer";}
+    100% {content: "Game Maker";}
+}
+
 #headingID{
     font-family: "Courier Prime", serif;
     font-weight: 400;
@@ -13,4 +21,12 @@
     animation-name: example;
     animation-duration: 5s;
     animation-iteration-count: infinite;
+}
+
+#headingID::after {
+  display: inline-block;
+  content: "";
+  animation-name: word;
+  animation-duration: 5s; 
+  animation-iteration-count: infinite;
 }
