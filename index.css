@@ -31,6 +31,10 @@
   animation-iteration-count: infinite;
 }
 
+#whack{ 
+  font-family: "Courier Prime", serif;
+}
+
 #descriptAboutSelf{ 
   font-family: 'Courier New', Courier, monospace;
 }
