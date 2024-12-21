@@ -54,7 +54,7 @@
 }
 
 .whackimagecodecontainer{ 
-  float: right; /* Align the image to the right */
-    max-width: 65%; /* Adjust image size */
+    float: right;
+    max-width: 65%; 
     margin: 0px;
 }
