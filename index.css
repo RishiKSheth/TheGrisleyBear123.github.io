@@ -52,3 +52,9 @@
   padding: 20px; 
   box-sizing: border-box;
 }
+
+.whackimagecodecontainer{ 
+  float: right; /* Align the image to the right */
+    max-width: 65%; /* Adjust image size */
+    margin: 0px;
+}
