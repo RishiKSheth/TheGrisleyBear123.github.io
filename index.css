@@ -56,6 +56,26 @@ body{
   font-family: 'Courier New', Courier, monospace;
 }
 
+.WhackContainer{ 
+  font-size: smaller;
+  border: 2px solid black; 
+    margin: 20px auto; 
+    border-radius: 8px; 
+    max-width: 80%; 
+    background-color: #f9f9f9; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#whackImage{ 
+  width: 20%;
+  height: auto;
+}
+
+#whackImageCode{ 
+  width: 50%;
+  height: auto; 
+}
+
 
 .container{ 
   width: 40%; 
