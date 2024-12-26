@@ -1,3 +1,4 @@
+
 @keyframes example {
     0%   {background-color:red; left:0px; top:0px;}
     25%  {background-color:yellow; left:200px; top:0px;}
@@ -67,7 +68,8 @@ body{
 
 .WhackContainer{ 
   font-size: smaller;
-  border: 2px solid black; 
+  font-family: 'Courier New', Courier, monospace;
+  border: 5px solid black; 
     margin: 20px auto; 
     border-radius: 8px; 
     max-width: 80%; 
@@ -75,6 +77,7 @@ body{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transform: translateX(100%);
     animation: rightsideanimation 1s ease-out forwards; 
+    width: 40%; 
 }
 
 #whackImage{ 
@@ -82,28 +85,7 @@ body{
   height: auto;
 }
 
-#whackImageCode{ 
+#whackImageCode{  
   width: 50%;
   height: auto; 
 }
-
-
-.container{ 
-  width: 40%; 
-  margin-left: auto;
-  margin-right: 0;
-  padding: 20px; 
-  box-sizing: border-box;
-}
-
-.whackimagecodecontainer{ 
-    float: right;
-    max-width: 65%; 
-    margin: 0px;
-}
-
-.rishishethimagecontainer{ 
-  float: left; 
-  max-width: 65%;
-  margin: 0px; 
-} 
