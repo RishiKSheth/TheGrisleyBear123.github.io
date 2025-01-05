@@ -4,8 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     image.addEventListener('click', () => {
         window.open('https://github.com/TheGrisleyBear123/WhackAmole', '_blank');
     }); 
-    
-    /*for animations */
+
     image.addEventListener('mouseenter', () => {
         image.classList.add('zoom-animation'); 
     });
@@ -14,6 +13,20 @@ document.addEventListener('DOMContentLoaded', () => {
         image.classList.remove('zoom-animation'); 
     }); 
 
+    /*for chatapp project*/
+    const image2 = document.getElementById("chatImage"); 
+    image2.addEventListener('click', () => { 
+        window.open('https://github.com/TheGrisleyBear123/ChatAppImproved', '_blank'); 
+    }); 
+
+    image2.addEventListener('mouseenter', () => {
+        image2.classList.add('zoom-animation'); 
+    });
+
+    image2.addEventListener('mouseleave', () => {
+        image2.classList.remove('zoom-animation'); 
+    });
+    
     /* for custom cursor */
     document.body.addEventListener('mousedown', () => { 
         document.body.style.cursor = "url('images/clickcustomcursor.png'), auto";

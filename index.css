@@ -24,6 +24,17 @@
     transform: translateX(0); 
   }
 }
+
+@keyframes leftsideanimation{ 
+  0%{ 
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0); 
+  }
+}
+
 @keyframes zoomAnimation {
   0% { transform: scale(1); }
   100% { transform: scale(1.10); }
@@ -32,6 +43,8 @@
 .zoom-animation { 
   animation: zoomAnimation 1s;
 }
+
+
 
 body{ 
   cursor:url('images/swordcursor.png'), auto; 
@@ -79,13 +92,21 @@ body{
     animation: rightsideanimation 1s ease-out forwards; 
     width: 40%; 
 }
+.ChatContainer{ 
+  font-size: smaller;
+  font-family: 'Courier New', Courier, monospace;
+  border: 5px solid black; 
+    margin: 20px auto; 
+    border-radius: 8px; 
+    max-width: 80%; 
+    background-color: #f9f9f9; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateX(100%);
+    animation: leftsideanimation 1s ease-out forwards; 
+    width: 40%; 
+}
 
 #whackImage{ 
   width: 20%;
   height: auto;
-}
-
-#whackImageCode{  
-  width: 50%;
-  height: auto; 
 }
