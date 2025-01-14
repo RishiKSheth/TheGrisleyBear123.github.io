@@ -27,6 +27,24 @@ document.addEventListener('DOMContentLoaded', () => {
         image2.classList.remove('zoom-animation'); 
     });
     
+    /* for dark mode */
+    const darkModeCheckbox = document.getElementById("checkbox"); 
+    darkModeCheckbox.addEventListener('change', () => {
+        document.body.classList.toggle("dark-mode"); 
+
+        // Store user preference in LocalStorage
+        if (document.body.classList.contains("dark-mode")) {
+            localStorage.setItem("darkMode", "enabled");
+        } else {
+            localStorage.setItem("darkMode", "disabled");
+        }
+    });
+
+    if (localStorage.getItem("darkMode") === "enabled") {
+        document.body.classList.add("dark-mode");
+        darkModeCheckbox.checked = true;
+    } 
+    
     /* for custom cursor */
     document.body.addEventListener('mousedown', () => { 
         document.body.style.cursor = "url('images/clickcustomcursor.png'), auto";
@@ -35,4 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.addEventListener('mouseup', () => { 
         document.body.style.cursor = "url('images/swordcursor.png'), auto";
     });
+
+    
+    
 }); 
