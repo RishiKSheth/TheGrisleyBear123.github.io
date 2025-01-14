@@ -28,22 +28,23 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     
     /* for dark mode */
-    const darkModeCheckbox = document.getElementById("checkbox"); 
-    darkModeCheckbox.addEventListener('change', () => {
-        document.body.classList.toggle("dark-mode"); 
-
-        // Store user preference in LocalStorage
-        if (document.body.classList.contains("dark-mode")) {
-            localStorage.setItem("darkMode", "enabled");
-        } else {
-            localStorage.setItem("darkMode", "disabled");
-        }
-    });
+    const darkModeToggle = document.getElementById("checkbox");
+    const body = document.body;
 
     if (localStorage.getItem("darkMode") === "enabled") {
-        document.body.classList.add("dark-mode");
-        darkModeCheckbox.checked = true;
-    } 
+        body.classList.add("dark-mode");
+        darkModeToggle.checked = true; 
+    }
+
+    darkModeToggle.addEventListener("change", () => {
+        if (darkModeToggle.checked) {
+            body.classList.add("dark-mode");
+            localStorage.setItem("darkMode", "enabled"); 
+        } else {
+            body.classList.remove("dark-mode");
+            localStorage.setItem("darkMode", "disabled"); 
+        }
+    });
     
     /* for custom cursor */
     document.body.addEventListener('mousedown', () => { 
